@@ -1,2 +1,3 @@
 # AGRINHO-2026
-Projeto agrinho festejando a conexão entre campo cidade 
+Projeto agrinho
+Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente
