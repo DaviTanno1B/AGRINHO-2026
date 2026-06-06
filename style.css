@@ -1,7 +1,131 @@
-html, body {
-  margin: 0;
-  padding: 0;
+:root {
+    --cor-fundo: #c1f0c1;
+    --cor-texto: #1a331a;
+    --cor-primaria: #2e8b57; 
+    --cor-primaria-hover: #1e5c3a;
+    --cor-cartao: #ffffff;
 }
-canvas {
-  display: block;
+
+.tema-escuro {
+    --cor-fundo: #1a251a;
+    --cor-texto: #e6f2e6;
+    --cor-primaria: #4caf50;
+    --cor-primaria-hover: #66bb6a;
+    --cor-cartao: #2a3b2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color 0.4s ease, color 0.4s ease, font-size 0.3s ease;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.controles-acessibilidade {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flex-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--cor-cartao);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.formulario {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-primaria);
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-acao {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.btn-destaque {
+    background-color: #ff9800;
+    color: white;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.btn-destaque:hover {
+    background-color: #e68a00;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.escondido {
+    display: none;
+}
+
+.apoio-contador {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--cor-cartao);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .flex-layout {
+        flex-direction: column; 
+    }
+    
+    .controles-acessibilidade {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

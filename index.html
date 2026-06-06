@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body style="background: palegreen;">
+    <header class="controles-acessibilidade">
+        <button id="btn-tema" class="btn-acao">Alternar Modo Escuro</button>
+        <button id="btn-fonte" class="btn-acao">Aumentar Fonte</button>
+    </header>
 
-    <header>
-        </header>
-
-    <section class="chamada">
-        <div class="chamada-texto">
+    <main class="container">
+        <section class="chamada">
             <h1>Agro Forte, Futuro Sustentável</h1>
             <p>O equilíbrio essencial entre a alta produtividade no campo e a conservação do nosso meio ambiente.</p>
-        </div>
-    </section>
+        </section>
 
-    <section class="informacoes">
-        <h2>O que é a Sustentabilidade no Agronegócio?</h2>
-        <p>
-            A agricultura sustentável é um modelo de produção que busca atender às necessidades alimentares e de matéria-prima da sociedade atual sem comprometer a capacidade das gerações futuras. Esse conceito une a eficiência produtiva, a viabilidade econômica e um profundo respeito aos recursos naturais, garantindo que o uso do solo, da água e da biodiversidade seja feito de forma consciente.
-        </p>
-    </section>
+        <section class="interacao-usuario">
+            <h2>Faça parte dessa mudança!</h2>
+            <div class="formulario">
+                <label for="nomeUsuario">Qual o seu nome?</label>
+                <input type="text" id="nomeUsuario" placeholder="Digite seu nome aqui...">
+                <button id="btn-assinar" class="btn-acao">Assinar Compromisso</button>
+            </div>
+            <p id="mensagem-boas-vindas" class="escondido"></p>
+        </section>
 
-    <section class="detalhes">
-        <h2>Como alcançar o equilíbrio?</h2>
-        <p>
-            O segredo está na adoção de boas práticas e inovações tecnológicas. O uso racional de insumos, o manejo integrado de pragas e a preservação de nascentes são pilares desse equilíbrio. Ao proteger o solo da erosão e melhorar sua fertilidade natural, o produtor rural consegue aumentar a produtividade na mesma área de terra, reduzindo a necessidade de abertura de novas áreas de vegetação nativa.
-        </p>
-    </section>
+        <section class="informacoes flex-layout">
+            <article class="card">
+                <h2>O que é a Sustentabilidade no Agronegócio?</h2>
+                <p>A agricultura sustentável une eficiência produtiva, viabilidade econômica e respeito aos recursos naturais, garantindo o futuro do solo e da água.</p>
+            </article>
+            
+            <article class="card">
+                <h2>Exemplos Práticos</h2>
+                <ul>
+                    <li><strong>Plantio Direto:</strong> Retém a umidade e previne a erosão.</li>
+                    <li><strong>Integração (ILPF):</strong> Maximiza o uso da terra.</li>
+                    <li><strong>Bioinsumos:</strong> Reduz produtos químicos.</li>
+                </ul>
+            </article>
+        </section>
 
-    <section class="exemplos">
-        <h2>Exemplos Práticos de Sustentabilidade</h2>
-        <ul>
-            <li><strong>Plantio Direto:</strong> Técnica onde a semente é colocada no solo sem a necessidade de aração prévia, mantendo a palhada da colheita anterior. Isso retém a umidade, previne a erosão e melhora a matéria orgânica.</li>
-            <li><strong>Integração Lavoura-Pecuária-Floresta (ILPF):</strong> Sistema que alterna ou combina a produção de grãos, o plantio de árvores e a criação de animais na mesma área. Ele maximiza o uso da terra e garante maior bem-estar animal.</li>
-            <li><strong>Agricultura de Precisão:</strong> O uso de satélites, drones e GPS para aplicar água e fertilizantes apenas onde e quando são estritamente necessários, evitando desperdícios e contaminação do solo e da água.</li>
-            <li><strong>Bioinsumos:</strong> Utilização de produtos de origem biológica, como fungos e bactérias benéficas, para controlar pragas e estimular o crescimento das plantas, reduzindo a dependência de produtos químicos.</li>
-        </ul>
-    </section>
+        <section class="apoio-contador">
+            <h2>Apoiadores da Causa</h2>
+            <p>Pessoas que apoiam o Agro Sustentável: <span id="contador">0</span></p>
+            <button id="btn-apoiar" class="btn-destaque">Eu Apoio!</button>
+        </section>
+    </main>
 
-    <section class="beneficios">
-        <h2>Benefícios para a Sociedade e a Natureza</h2>
-        <p>
-            Um agronegócio forte e sustentável é a chave para garantir a segurança alimentar de uma população global em constante crescimento. Além disso, as práticas corretas de manejo ajudam a capturar carbono da atmosfera (mitigando as mudanças climáticas), preservam as bacias hidrográficas, protegem a fauna local e garantem rentabilidade a longo prazo para as famílias que vivem do campo.
-        </p>
-    </section>
-
-    <section class="conclusao">
-        <h2>Conclusão</h2>
-        <p>
-            A produção agrícola não precisa ser inimiga da conservação; pelo contrário, elas podem e devem andar juntas. A tecnologia e a conscientização mostram que o verdadeiro "agro forte" é aquele que compreende que a natureza é a sua principal aliada e o seu maior capital. Garantir o equilíbrio entre produzir e preservar é a única forma de construir um futuro próspero para as próximas gerações.
-        </p>
-    </section>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
