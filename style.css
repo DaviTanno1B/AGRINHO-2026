@@ -99,18 +99,8 @@ button {
     color: white;
 }
 
-.btn-destaque {
-    background-color: #ff9800;
-    color: white;
-    font-size: 1.1rem;
-}
-
 button:hover {
     background-color: var(--cor-primaria-hover);
-}
-
-.btn-destaque:hover {
-    background-color: #e68a00;
 }
 
 button:active {
@@ -119,14 +109,6 @@ button:active {
 
 .escondido {
     display: none;
-}
-
-.apoio-contador {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: var(--cor-cartao);
-    border-radius: 10px;
 }
 
 @media (max-width: 600px) {

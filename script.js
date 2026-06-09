@@ -1,18 +1,19 @@
-let totalApoiadores = 0; 
+// Variável para controlar a fonte
 let fonteAumentada = false;
 
 const btnTema = document.getElementById('btn-tema');
 const btnFonte = document.getElementById('btn-fonte');
 const btnAssinar = document.getElementById('btn-assinar');
-const btnApoiar = document.getElementById('btn-apoiar');
 const inputNome = document.getElementById('nomeUsuario');
 const mensagemBoasVindas = document.getElementById('mensagem-boas-vindas');
-const textoContador = document.getElementById('contador');
 
+
+// Função para alternar entre o modo Claro e escuro
 btnTema.addEventListener('click', () => {
     document.body.classList.toggle('tema-escuro');
 });
 
+// Função para aumentar ou diminuir o tamanho da fonte
 btnFonte.addEventListener('click', () => {
     if (!fonteAumentada) {
         document.body.style.fontSize = '120%';
@@ -35,14 +36,4 @@ btnAssinar.addEventListener('click', () => {
     } else {
         alert("Por favor, digite seu nome antes de assinar.");
     }
-});
-
-btnApoiar.addEventListener('click', () => {
-    totalApoiadores++;
-    textoContador.textContent = totalApoiadores;
-    
-    btnApoiar.disabled = true;
-    btnApoiar.textContent = "Apoiado!";
-    btnApoiar.style.backgroundColor = "#ccc";
-    btnApoiar.style.cursor = "not-allowed";
 });
