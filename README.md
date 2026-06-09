@@ -10,3 +10,4 @@ O tema "Agro forte, futuro sustentável: equilíbrio entre produção e meio amb
 
 O que é Sustentabilidade no Agronegócio?https://agroadvance.com.br/blog-sustentabilidade-no-agronegocio/
 O plano ABC https://www.gov.br/agricultura/pt-br/assuntos/sustentabilidade/planoabc-abcmais/publicacoes/download.pdf
+Gemini para arrumar bugs no código
